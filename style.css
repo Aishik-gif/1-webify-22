@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap");
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -13,14 +13,14 @@ body * {
   text-decoration: unset;
 }
 
-body{
-  display:flex;
+body {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -31,37 +31,37 @@ header{
   border-bottom: 2px solid rgb(45, 45, 45);
 }
 
-.head-text{
+.head-text {
   font-weight: 700;
   font-size: 1.5em;
 }
 
-header ul{
+header ul {
   display: flex;
 }
 
-header li{
+header li {
   list-style: none;
   padding: 10px;
 }
 
-header button{
+header button {
   height: 40px;
   width: 120px;
   background-color: rgb(220, 205, 186);
   border: 3px solid rgb(44, 42, 42);
   border-radius: 40px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
 
-header button:hover{
+header button:hover {
   background-color: rgb(237, 206, 175);
   transform: scale(1.1);
   transition: all 0.25s;
 }
 
-.hero{
+.hero {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap-reverse;
@@ -77,7 +77,7 @@ header button:hover{
   text-align: center;
 }
 
-.hero-main-text{
+.hero-main-text {
   letter-spacing: 0.1rem;
   word-spacing: 0.5rem;
   font-size: 2.5em;
@@ -85,14 +85,14 @@ header button:hover{
   color: lavender;
 }
 
-.hero-subtext{
+.hero-subtext {
   font-size: 1.2em;
   color: rgba(230, 230, 250, 0.758);
   width: 80%;
   text-align: center;
 }
 
-.box{
+.box {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -101,26 +101,26 @@ header button:hover{
   padding: 20px;
 }
 
-.box:nth-child(odd){
+.box:nth-child(odd) {
   background: rgb(165, 160, 153);
   flex-wrap: wrap;
 }
 
-.box:nth-child(even){
+.box:nth-child(even) {
   background: rgb(250, 242, 232);
   flex-wrap: wrap-reverse;
 }
 
-.box-text{
+.box-text {
   width: 350px;
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
 
-h1{
+h1 {
   font-size: 1.5em;
 }
 
-.box1-image{
+.box1-image {
   width: 350px;
   height: 70vh;
   border-radius: 20px;
@@ -129,7 +129,7 @@ h1{
   background-repeat: no-repeat;
 }
 
-.box2-image{
+.box2-image {
   width: 350px;
   height: 70vh;
   border-radius: 20px;
@@ -139,7 +139,7 @@ h1{
   background-position: top;
 }
 
-.box3-image{
+.box3-image {
   width: 350px;
   height: 70vh;
   border-radius: 20px;
@@ -149,7 +149,7 @@ h1{
   background-position: bottom;
 }
 
-.box4-image{
+.box4-image {
   width: 350px;
   height: 70vh;
   border-radius: 20px;
@@ -159,7 +159,7 @@ h1{
   background-position: left bottom;
 }
 
-.box5{
+.box5 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,16 +169,16 @@ h1{
   min-height: 100vh;
 }
 
-.box5 h1{
+.box5 h1 {
   font-size: 2em;
   margin-bottom: 20px;
 }
 
-.box5 p{
+.box5 p {
   margin-top: 15px;
 }
 
-.images{
+.images {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -186,7 +186,7 @@ h1{
   width: 90%;
 }
 
-.small-image{
+.small-image {
   width: 200px;
   height: 250px;
   display: flex;
@@ -196,7 +196,7 @@ h1{
   margin: 10px 20px;
 }
 
-.small-image img{
+.small-image img {
   width: 200px;
   height: 200px;
   border-radius: 10px;
@@ -204,12 +204,12 @@ h1{
   object-position: bottom;
 }
 
-.box5 ul{
+.box5 ul {
   display: flex;
   flex-wrap: wrap;
 }
 
-.box5 li{
+.box5 li {
   width: 200px;
   height: 100px;
   background-color: rgb(238, 220, 203);
@@ -221,21 +221,21 @@ h1{
   border-radius: 10px;
 }
 
-#where-to-get{
+#where-to-get {
   flex-direction: column;
   justify-content: space-around;
 }
 
-#where-to-get h1{
+#where-to-get h1 {
   font-size: 2em;
 }
 
-iframe{
+iframe {
   width: 80%;
   height: 70vh;
 }
 
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -245,19 +245,20 @@ footer{
   border-top: 2px solid lightgray;
 }
 
-#faq{
+#faq {
   flex-direction: column;
   height: fit-content;
   padding: 50px 20px;
 }
 
-.faq{
+.faq {
   width: 70%;
   padding: 10px;
   background-color: antiquewhite;
+  border-radius: 10px;
 }
 
-.ques{
+.ques {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -267,24 +268,24 @@ footer{
   font-weight: 700;
 }
 
-.ans{
+.ans {
   height: fit-content;
-  width: 100%;
+  width: 95%;
   position: relative;
   left: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.ans a{
+.ans a {
   color: purple;
 }
 
-.ans a:hover{
+.ans a:hover {
   text-decoration: underline;
 }
 
-.ques button{
+.ques button {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -293,20 +294,24 @@ footer{
   background-color: white;
 }
 
-.hide{
+.ques button:hover{
+  background-color: lightgray;
+}
+
+.hide {
   display: none;
 }
 
-.mhead{
+.mhead {
   display: none;
 }
 
-.mhead h1{
+.mhead h1 {
   position: absolute;
   left: 20px;
 }
 
-.mhead button{
+.mhead button {
   position: absolute;
   right: 20px;
   border: none;
@@ -314,16 +319,83 @@ footer{
   font-size: 20px;
 }
 
-.nav{
+.nav {
   display: none;
 }
 
-@media only screen and (max-width: 500px){
-  header{
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-text {
+  font-weight: 700;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(237, 206, 175);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.modal p {
+  padding-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+
+.modal button {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background: rgb(250, 242, 232);
+  height: 30px;
+  width: 100px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(165, 160, 153);
+}
+
+input[type="text"] {
+  background: white;
+  border: none;
+  outline: none;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+  header {
     display: none;
   }
 
-  .mhead{
+  .mhead {
     display: flex;
     height: 8vh;
     width: 100%;
@@ -331,7 +403,7 @@ footer{
     background-color: rgb(220, 205, 186);
   }
 
-  .nav{
+  .nav {
     display: block;
     position: fixed;
     width: 200px;
@@ -342,7 +414,7 @@ footer{
     z-index: 1;
   }
 
-  .nav button{
+  .nav button {
     position: relative;
     left: 10px;
     top: 15px;
@@ -350,11 +422,21 @@ footer{
     background: none;
   }
 
-  .nav-links{
+  .nav-links {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 30%;
     padding: 20px;
+  }
+
+  .nav .sub{
+    height: 40px;
+    width: 120px;
+    background-color: rgb(220, 205, 186);
+    border: 3px solid rgb(44, 42, 42);
+    border-radius: 40px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
   }
 }

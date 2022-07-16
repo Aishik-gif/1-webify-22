@@ -17,7 +17,10 @@
       <div class="nav-links">
       <a href="#why-choose-us" onclick="hidenav()">Why Choose Us</a>
       <a href="#where-to-get" onclick="hidenav()">Find a Pet</a>
-      <a href="#faq" onclick="hidenav()">FAQ</a></div>
+      <a href="#faq" onclick="hidenav()">FAQ</a>
+    </div>
+    
+    <button onclick="showmodal(); hidenav()" class="sub">Subscribe</button>
     </div>
     <header>
       <div class="head-text"><a href="#">Pets.co</a></div>
@@ -26,7 +29,7 @@
         <li><a href="#where-to-get">Find a pet</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
-      <button>Subscribe</button>
+      <button onclick="showmodal()">Subscribe</button>
     </header>
     <div class="hero">
       <div class="hero-main-text">Bring Love Home</div>
@@ -107,7 +110,7 @@
     <div class="box" id="faq">
       <h1>Frequently Asked Questions</h1>
       <div class="faq">
-        <div class="ques q1">Am I ready to get a Pet? <button onclick="showa1()">&#129095;</button></div>
+        <div class="ques q1">Am I ready to get a Pet? <button onclick="showa1()">&#8691;</button></div>
         <div class="ans a1 hide">
           Before getting a pet think about these:
           <ul>
@@ -116,11 +119,11 @@
             <li>Age (Yours and Your Pet's) Matters</li>
           </ul>
         </div>
-        <div class="ques q2">What are the benefits? <button onclick="showa2()">&#129095;</button></div>
+        <div class="ques q2">What are the benefits? <button onclick="showa2()">&#8691;</button></div>
         <div class="ans a2 hide">
           We discussed it <a href="#why-choose-us">here</a>.
         </div>
-        <div class="ques q3">Dogs or Cats? <button onclick="showa3()">&#129095;</button></div>
+        <div class="ques q3">Dogs or Cats? <button onclick="showa3()">&#8691;</button></div>
         <div class="ans a3 hide">
           If you're looking for a companion that will sit by your side, then a
           dog might be your best bet. Cats can be quite affectionate and
@@ -128,6 +131,19 @@
           overstimulated much more easily than dogs, and at that point they want
           to escape for a while.
         </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-text">
+        <p>Subscribe to weekly cat photos</p> 
+        <button onclick="hidemodal()">&#10060;</button>
+        <form>
+          <label for="name">Full Name: </label><br>
+          <input type="text" required><br>
+          <label for="email">Email: </label><br>
+          <input type="text" required><br>
+          <input type="submit" value="Subscribe">
+        </form>
       </div>
     </div>
     <footer>
@@ -139,12 +155,16 @@
       const a2 = document.querySelector('div.a2');
       const a3 = document.querySelector('div.a3');
       const nav = document.querySelector('.nav');
+      const modal = document.querySelector('.modal');
 
       function showa1(){a1.classList.toggle('hide');}
       function showa2(){a2.classList.toggle('hide');}
       function showa3(){a3.classList.toggle('hide');}
       function shownav(){nav.style.right='0';}
       function hidenav(){nav.style.right='-200px';}
+      function hidemodal(){modal.style.display="none"}
+      function showmodal(){modal.style.display="block"}
+
     </script>
   </body>
 </html>

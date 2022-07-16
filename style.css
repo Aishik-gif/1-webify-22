@@ -36,6 +36,10 @@ header {
   font-size: 1.5em;
 }
 
+.head-text:hover{
+  color: antiquewhite;
+}
+
 header ul {
   display: flex;
 }

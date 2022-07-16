@@ -4,12 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing page</title>
+    <title>Pets.co - Get A Pet Now</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="mhead">
+      <h1>Pets.co</h1>
+      <button onclick="shownav()">&#9776;</button>
+    </div>
+    <div class="nav">
+      <button onclick="hidenav()">&#10060;</a></button>
+      <div class="nav-links">
+      <a href="#why-choose-us" onclick="hidenav()">Why Choose Us</a>
+      <a href="#where-to-get" onclick="hidenav()">Find a Pet</a>
+      <a href="#faq" onclick="hidenav()">FAQ</a></div>
+    </div>
     <header>
-      <div class="head-text">Pets.co</div>
+      <div class="head-text"><a href="#">Pets.co</a></div>
       <ul>
         <li><a href="#why-choose-us">Why Choose Us</a></li>
         <li><a href="#where-to-get">Find a pet</a></li>
@@ -93,6 +104,47 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-    <footer>Aishik</footer>
+    <div class="box" id="faq">
+      <h1>Frequently Asked Questions</h1>
+      <div class="faq">
+        <div class="ques q1">Am I ready to get a Pet? <button onclick="showa1()">&#129095;</button></div>
+        <div class="ans a1 hide">
+          Before getting a pet think about these:
+          <ul>
+            <li>Pets Need Your Time and Energy</li>
+            <li>Can You Afford a Pet?</li>
+            <li>Age (Yours and Your Pet's) Matters</li>
+          </ul>
+        </div>
+        <div class="ques q2">What are the benefits? <button onclick="showa2()">&#129095;</button></div>
+        <div class="ans a2 hide">
+          We discussed it <a href="#why-choose-us">here</a>.
+        </div>
+        <div class="ques q3">Dogs or Cats? <button onclick="showa3()">&#129095;</button></div>
+        <div class="ans a3 hide">
+          If you're looking for a companion that will sit by your side, then a
+          dog might be your best bet. Cats can be quite affectionate and
+          attentive, but only up to a point. They tend to become bored or
+          overstimulated much more easily than dogs, and at that point they want
+          to escape for a while.
+        </div>
+      </div>
+    </div>
+    <footer>
+      &#169;Aishik
+
+    </footer>
+    <script defer>
+      const a1 = document.querySelector('div.a1');
+      const a2 = document.querySelector('div.a2');
+      const a3 = document.querySelector('div.a3');
+      const nav = document.querySelector('.nav');
+
+      function showa1(){a1.classList.toggle('hide');}
+      function showa2(){a2.classList.toggle('hide');}
+      function showa3(){a3.classList.toggle('hide');}
+      function shownav(){nav.style.right='0';}
+      function hidenav(){nav.style.right='-200px';}
+    </script>
   </body>
 </html>

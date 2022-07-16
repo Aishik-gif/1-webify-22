@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap");
+html{
+  scroll-behavior: smooth;
+}
+
 body,
 body * {
   margin: unset;
@@ -70,6 +74,7 @@ header button:hover{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  text-align: center;
 }
 
 .hero-main-text{
@@ -155,10 +160,13 @@ h1{
 }
 
 .box5{
+  display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  flex-wrap: wrap-reverse;
   text-align: center;
+  height: fit-content;
+  min-height: 100vh;
 }
 
 .box5 h1{
@@ -235,4 +243,118 @@ footer{
   height: 10vh;
   background-color: whitesmoke;
   border-top: 2px solid lightgray;
+}
+
+#faq{
+  flex-direction: column;
+  height: fit-content;
+  padding: 50px 20px;
+}
+
+.faq{
+  width: 70%;
+  padding: 10px;
+  background-color: antiquewhite;
+}
+
+.ques{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid;
+  font-weight: 700;
+}
+
+.ans{
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ans a{
+  color: purple;
+}
+
+.ans a:hover{
+  text-decoration: underline;
+}
+
+.ques button{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+.hide{
+  display: none;
+}
+
+.mhead{
+  display: none;
+}
+
+.mhead h1{
+  position: absolute;
+  left: 20px;
+}
+
+.mhead button{
+  position: absolute;
+  right: 20px;
+  border: none;
+  background: none;
+  font-size: 20px;
+}
+
+.nav{
+  display: none;
+}
+
+@media only screen and (max-width: 500px){
+  header{
+    display: none;
+  }
+
+  .mhead{
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(220, 205, 186);
+  }
+
+  .nav{
+    display: block;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: gray;
+    right: -200px;
+    transition: all 1s;
+    z-index: 1;
+  }
+
+  .nav button{
+    position: relative;
+    left: 10px;
+    top: 15px;
+    border: none;
+    background: none;
+  }
+
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30%;
+    padding: 20px;
+  }
 }

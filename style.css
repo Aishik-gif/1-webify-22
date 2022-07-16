@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap");
+body,
+body * {
+  margin: unset;
+  box-sizing: unset;
+  padding: unset;
+  font-size: unset;
+  color: unset;
+  text-decoration: unset;
+}
+
+body{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 15vh;
+  background: rgb(165, 160, 153);
+  position: fixed;
+  border-bottom: 2px solid rgb(45, 45, 45);
+}
+
+.head-text{
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+header ul{
+  display: flex;
+}
+
+header li{
+  list-style: none;
+  padding: 10px;
+}
+
+header button{
+  height: 40px;
+  width: 120px;
+  background-color: rgb(220, 205, 186);
+  border: 3px solid rgb(44, 42, 42);
+  border-radius: 40px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+header button:hover{
+  background-color: rgb(237, 206, 175);
+  transform: scale(1.1);
+  transition: all 0.25s;
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url(./silvana-carlos-TPdR4J19SGQ-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.hero-main-text{
+  letter-spacing: 0.1rem;
+  word-spacing: 0.5rem;
+  font-size: 2.5em;
+  font-weight: 900;
+  color: lavender;
+}
+
+.hero-subtext{
+  font-size: 1.2em;
+  color: rgba(230, 230, 250, 0.758);
+  width: 80%;
+  text-align: center;
+}
+
+.box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: auto;
+  padding: 20px;
+}
+
+.box:nth-child(odd){
+  background: rgb(165, 160, 153);
+  flex-wrap: wrap;
+}
+
+.box:nth-child(even){
+  background: rgb(250, 242, 232);
+  flex-wrap: wrap-reverse;
+}
+
+.box-text{
+  width: 350px;
+  margin-bottom: 15px
+}
+
+h1{
+  font-size: 1.5em;
+}
+
+.box1-image{
+  width: 350px;
+  height: 70vh;
+  border-radius: 20px;
+  background-image: url(./pexels-aysun-kahraman-öktem-5938110.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box2-image{
+  width: 350px;
+  height: 70vh;
+  border-radius: 20px;
+  background-image: url(./hamza-bounaim-NTzc9BjMP0M-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.box3-image{
+  width: 350px;
+  height: 70vh;
+  border-radius: 20px;
+  background-image: url(./liliya-kontanistova-C9-xzPSLgME-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.box4-image{
+  width: 350px;
+  height: 70vh;
+  border-radius: 20px;
+  background-image: url(./priscilla-fraire-0wnveO0xNmQ-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.box5{
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  text-align: center;
+}
+
+.box5 h1{
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.box5 p{
+  margin-top: 15px;
+}
+
+.images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  width: 90%;
+}
+
+.small-image{
+  width: 200px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 20px;
+}
+
+.small-image img{
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.box5 ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box5 li{
+  width: 200px;
+  height: 100px;
+  background-color: rgb(238, 220, 203);
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#where-to-get{
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#where-to-get h1{
+  font-size: 2em;
+}
+
+iframe{
+  width: 80%;
+  height: 70vh;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: whitesmoke;
+  border-top: 2px solid lightgray;
+}
